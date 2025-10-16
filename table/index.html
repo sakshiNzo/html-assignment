@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table Template</title>
+
+    <style>
+        /* ----------------------------
+           GENERAL STYLES
+        ----------------------------- */
+        body {
+            font-size: 30px;
+            font-family: sans-serif;
+            background: #D1D2D4;
+            max-width: 1140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 25px;
+        }
+
+        /* ----------------------------
+           TABLE STRUCTURE
+        ----------------------------- */
+        table,
+        td,
+        tr {
+            border-collapse: collapse;
+            border: 1px solid transparent;
+            border-spacing: 0px 10px;
+        }
+
+        td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            border-right: 8px solid #D1D2D4;
+            padding: 15px;
+        }
+
+        tr {
+            border-bottom: 8px solid #D1D2D4;
+            padding: 20px;
+        }
+
+        /* ----------------------------
+           TABLE HEADER (PRICING HEAD)
+        ----------------------------- */
+        table thead tr:nth-child(1) {
+            background-color: #477072;
+        }
+
+        th {
+            border-right: 8px solid #D1D2D4;
+            padding: 10px;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        /* ----------------------------
+           TABLE ROW COLORS
+           (ALTERNATE BACKGROUND)
+        ----------------------------- */
+        tr:nth-child(even) {
+            background-color: #FFFFFF;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e7e4e4;
+        }
+
+        /* ----------------------------
+           LAST ROW (SIGN-UP BUTTONS)
+        ----------------------------- */
+        table tbody tr:last-child {
+            background-color: #477072;
+        }
+
+        /* ----------------------------
+           BUTTON STYLES (Different Colors)
+        ----------------------------- */
+
+        /* First column of buttons */
+        td:nth-child(2) button {
+            background-color: #f4a330;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Second column of buttons */
+        td:nth-child(3) button {
+            background-color: #7bd0d5;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Third column of buttons */
+        td:nth-child(4) button {
+            background-color: rgb(255, 208, 0);
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Fourth (last) column of buttons */
+        td:last-child button {
+            background-color: #3ba792;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: none;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <!-- TABLE HEADER -->
+        <thead>
+            <tr>
+                <th>PRICING TABLE<br /> TEMPLATE</th>
+                <th>$9.99/month</th>
+                <th>$9.99/month</th>
+                <th>$9.99/month</th>
+                <th>$9.99/month</th>
+            </tr>
+        </thead>
+
+        <!-- TABLE BODY  -->
+        <tbody>
+
+            <tr>
+                <td>Storage</td>
+                <td>1 GB</td>
+                <td>5 GB</td>
+                <td>10 GB</td>
+                <td>20 GB</td>
+            </tr>
+
+
+            <tr>
+                <td>Bandwidth Space</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+            </tr>
+
+
+            <tr>
+                <td>Email</td>
+                <td>10</td>
+                <td>20</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>Custom Domains</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+
+
+            <tr>
+                <td>Databases</td>
+                <td>15</td>
+                <td>35</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>Secure Encryption</td>
+                <td>Secure</td>
+                <td>Secure</td>
+                <td>Secure</td>
+                <td>Secure</td>
+            </tr>
+
+
+            <tr>
+                <td>User</td>
+                <td>15</td>
+                <td>35</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>Secure Encryption</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+
+            <!-- Feature: 24/7 Support -->
+            <tr>
+                <td>24/7 Support</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+
+            <!-- Sign Up Buttons Row -->
+            <tr>
+                <td></td>
+                <td><button>Sign up</button></td>
+                <td><button>Sign up</button></td>
+                <td><button>Sign up</button></td>
+                <td><button>Sign up</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
