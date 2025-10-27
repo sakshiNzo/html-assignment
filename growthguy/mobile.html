@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Option Menu</title>
+<style>
+body {
+  background: #140a3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  width: 300px;
+}
+
+.select-box {
+  background-color: #3b34ff;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.select-box:hover {
+  background-color: #4c43ff;
+}
+
+.arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  padding: 4px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.dropdown.active .arrow {
+  transform: rotate(-135deg);
+}
+
+.option-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #3b34ff;
+  color: #fff;
+  border-radius: 0 0 6px 6px;
+  margin-top: 3px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.option {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.option:hover {
+  background-color: #4c43ff;
+}
+
+.dropdown.active .option-list {
+  display: flex;
+}
+</style>
+</head>
+<body>
+
+<div class="dropdown" id="dropdown">
+  <div class="select-box">
+    <span id="selected">Select an option</span>
+    <span class="arrow"></span>
+  </div>
+  <div class="option-list">
+    <div class="option">LinkedIn</div>
+    <div class="option">Facebook</div>
+    <div class="option">Social Communities / Forums / Groups</div>
+    <div class="option">Referred by a friend</div>
+    <div class="option">Other</div>
+  </div>
+</div>
+
+<script>
+const dropdown = document.getElementById("dropdown");
+const selectBox = dropdown.querySelector(".select-box");
+const selected = document.getElementById("selected");
+const options = dropdown.querySelectorAll(".option");
+
+selectBox.addEventListener("click", () => {
+  dropdown.classList.toggle("active");
+});
+
+options.forEach(option => {
+  option.addEventListener("click", () => {
+    selected.textContent = option.textContent;
+    dropdown.classList.remove("active");
+  });
+});
+
+window.addEventListener("click", (e) => {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove("active");
+  }
+});
+</script>
+
+</body>
+</html>
