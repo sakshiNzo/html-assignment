@@ -21,9 +21,10 @@ particlesJS('particles-js', {
     },
     interactivity: {
         detect_on: 'canvas',
-        events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: true, mode: 'push' } },
+        events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: false, mode: 'push' } },
         modes: { grab: { distance: 400, line_linked: { opacity: 1 } } }
     },
+
     retina_detect: true
 });
 

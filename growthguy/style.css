@@ -1110,7 +1110,7 @@ header {
     background-color: #00b67a0d;
     border: 1px solid #9f9f9f40;
     border-radius: 12px;
-    padding: 24px;
+    /* padding: 24px; */
     color: #fff;
     font-size: 18px;
     display: flex;
@@ -1128,11 +1128,6 @@ header {
 .ques h3 {
     font-size: 17px;
 }
-
-
-
-
-
 .answer h3 {
     padding: 20px 0px;
     display: flex;
@@ -1350,7 +1345,9 @@ footer {
     max-height: 200px;
     /* enough space for text */
     color: black;
-    padding: 20px 0px;
+    padding: 0px 20px 20px;
+    background:#CDF45C;
+    border-radius: 12px;
 }
 
 .questions.active .ques h3 {
@@ -1377,6 +1374,7 @@ footer {
 
 #particles-js {
     background-color: #150C46 !important;
+    pointer-events: none;
 }
 
 .growth-icon svg {
@@ -1530,8 +1528,8 @@ footer {
     padding: 80px 0px;
 }
 
-.form {
-    max-width: 880px;
+.contact-form form {
+    max-width: 982px;
     margin: 0 auto;
     padding: 32px 35px 15px;
 }
@@ -1551,8 +1549,9 @@ textarea,
     background: none;
     border: 1px solid #c7c7c7;
     border-radius: 3px;
-    padding: 20px;
+    padding: 10px 25px;
     color: #fff;
+    font-family: 'HelveticaNowDisplay-Regular';
 
 }
 
@@ -1633,6 +1632,11 @@ input[type="tel"] {
 .form-select {
     display: flex;
     flex-direction: column;
+}
+
+.form-innner {
+    max-width: 912px;
+    padding: 20px;
 }
 
 .form-inner a {
@@ -1775,12 +1779,67 @@ input:focus {
 
 .contact-img {
     background-color: #E2F3CD;
-    width: max-content;
+   
     padding: 10px;
     border-radius: 6px;
-
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-info-outer p {
     padding-bottom: 10px;
+}
+
+.pt {
+    padding: 100px 0px 0px;
+}
+
+.iti__selected-dial-code {
+    color: #fff;
+    font-family: 'HelveticaNowDisplay-Regular';
+}
+
+.contact-form form input::placeholder {
+    font-size: 16px;
+}
+
+
+
+.contact-card {
+    padding: 30px;
+    box-shadow: inset 2px 0px 0px 10px #1A1153;
+    background-color: #150C46;
+    min-width:350px;
+}
+
+.contact-card a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.contact-card:nth-child(2) .contact-img {
+    background-color: #DFE8F9;
+}
+
+.contact-card:nth-child(3) .contact-img {
+    background-color: #F9ECC9;
+}
+.active .ques i{
+    color:#000;
+    transform: rotate(180deg);
+}
+.ques i{
+    color:#fff;
+    transition: all 0.4s ease;
+}
+.ques h3{
+    padding:24px 24px 24px;
+}
+.ques h3+span{
+    display: block;
+    padding:20px;
 }
