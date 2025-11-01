@@ -14,72 +14,82 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container ">
             <div class="header-top">
-                <img src="./images/logo.png" class="logo" />
-                <div class=" header-right">
-                    <ul>
-                        <li><a href="" class="fs-14">Home </a></li>
-                        <li><a href="" class="fs-14">Website Accessibility</a></li>
-                        <li><a href="" class="fs-14">Privacy Policy</a></li>
+                <div class="logo col-3"> <img src="./images/logo.png" class="logo"></div>
+                <div class="right-header col-9">
+                    <div class=" header-right">
+                        <ul>
+                            <li><a href="" class="fs-14">Home </a></li>
+                            <li><a href="" class="fs-14">Website Accessibility</a></li>
+                            <li><a href="" class="fs-14">Privacy Policy</a></li>
 
-                    </ul>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="./images/facebook.png" />
-                        <img src="./images/xicon.png" alt="" />
-                        <img src="./images/linkdein.png" alt="" />
-                        <img src="./images/Instagram.png" alt="" />
-                        <img src="./images/youtube.png" alt="" />
-                    </div>
-                </div>
-                <div class="header-contact">
-                    <ul class="justify-content-center align-items-center">
-                        <li><a href="#"><img src="./images/phone.png" /> (NJ) 201.933.7500</a></li>
-                        <li><a href="#"><img src="./images/phone.png" /> (NJ) 201.933.7500</a></li>
-
-                    </ul>
-                    <div>
-                        <a href="#" class="btn"><img src="./images/phone-white.png" />REQUEST A QUOTE</a>
-                        <a href="#" class="btn brder">Employee portal</a>
-                    </div>
-
-                </div>
-                <div class="header-bottom">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
-                        <div class="container-fluid">
-
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse justify-content" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
-                                    <a class="nav-link fw-semibold" aria-current="page" href="#">ABOUT US</a>
-                                    <a class="nav-link fw-semibold" href="#">SUSTAINABILITY</a>
-                                    <a class="nav-link fw-semibold" href="#">SERVICES</a>
-                                    <a class="nav-link fw-semibold" href="#">JOB-LOTS</a>
-                                    <a class="nav-link fw-semibold" href="#">RESOURCES</a>
-                                    <a class="nav-link fw-semibold" href="#">EMPLOYMENT</a>
-                                </div>
-                            </div>
+                        </ul>
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/facebook.png">
+                            <img src="./images/xicon.png" alt="">
+                            <img src="./images/linkdein.png" alt="">
+                            <img src="./images/Instagram.png" alt="">
+                            <img src="./images/youtube.png" alt="">
                         </div>
-                    </nav>
+                    </div>
+                    <div class="header-contact">
+                        <ul class="justify-content-center align-items-center m-0">
+                            <li><a href="#"><img src="./images/phone.png"> (NJ) 201.933.7500</a></li>
+                            <li><a href="#"><img src="./images/phone.png"> (NJ) 201.933.7500</a></li>
+
+                        </ul>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="btn"><img src="./images/phone-white.png">REQUEST A QUOTE</a>
+                            <a href="#" class="btn brder">Employee portal</a>
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
 
+
+        </div>
+        <div class="header-bottom">
+            <nav class="navbar navbar-expand-lg  p-0">
+                <div class="container-fluid ">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
+                            <a class="nav-link " href="#">SUSTAINABILITY</a>
+                            <a class="nav-link " href="#">SERVICES</a>
+                            <a class="nav-link " href="#">JOB-LOTS</a>
+                            <a class="nav-link " href="#">RESOURCES</a>
+                            <a class="nav-link " href="#">EMPLOYMENT</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     </div>
     <div class="banner-section">
         <div class="bg-banner">
-            <div class="row justify-content-end">
+            <div class="row align-items-center justify-content-end ">
                 <div class="col-6 d-flex justify-content-center  align-items-center  banner-outer">
                     <div class=" banner-left ">
                         <h1 class="text-uppercase fw-semibold">Single Source For Smart, Sustainable Packaging and
@@ -104,53 +114,53 @@
         </div>
     </div>
     <section class="slide-section">
-        <div class="container-fluid">
-            <div class="slider-outer d-flex justify-content-center align-items-center gap-6">
-                <h2 class="px-5">Trusted Companies</h2>
+        <div class="wrapper">
+            <div class="slider-outer d-flex justify-content-between align-items-center gap-5 ">
+                <h2 class="col-3">Trusted Companies</h2>
 
-                <div class="slider">
+                <div class="slider col-9">
 
                     <div class=" slide-track slide-logo">
                         <div class="slide">
-                            <img src="./images/president-logo.png" alt="" />
+                            <img src="./images/president-logo.png" alt="">
                         </div>
                         <div class="slide">
-                            <img src="./images/artisan-logo.png" alt="" />
+                            <img src="./images/artisan-logo.png" alt="">
                         </div>
                         <div class="slide">
-                            <img src="./images/techpak-logo.png" alt="" />
+                            <img src="./images/techpak-logo.png" alt="">
                         </div>
                         <div class="slide">
-                            <img src="./images/pp-logo.png" alt="" />
+                            <img src="./images/pp-logo.png" alt="">
                         </div>
                         <div class="slide">
-                            <img src="./images/sustain-logo.png" alt="" />
-                        </div>
-
-                        <div class="slide">
-                            <img src="./images/fsc-logo.png" alt="" />
-                        </div>
-
-
-
-                        <div class="slide">
-                            <img src="./images/president-logo.png" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="./images/artisan-logo.png" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="./images/techpak-logo.png" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="./images/pp-logo.png" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="./images/sustain-logo.png" alt="" />
+                            <img src="./images/sustain-logo.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="./images/fsc-logo.png" alt="" />
+                            <img src="./images/fsc-logo.png" alt="">
+                        </div>
+
+
+
+                        <div class="slide">
+                            <img src="./images/president-logo.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/artisan-logo.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/techpak-logo.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/pp-logo.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/sustain-logo.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="./images/fsc-logo.png" alt="">
                         </div>
                     </div>
 
@@ -159,82 +169,83 @@
             </div>
         </div>
     </section>
-    <section class="card">
-        <div class="container-fluid bg">
-            <div class="card-outer">
-                <div
-                    class="card-inner d-flex justify-content-center align-items-center pad100 flex-column align-content-center">
-                    <h2 class="text-center fs-44">Quality & Service need to done</h2>
-                    <img src="./images/border.png" />
-                    <p class="text-center ">At President Container Group, quality and service aren’t just words—they’re
-                        promises. We fully<br /> satisfy our customers’ needs without compromise</p>
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card" style="width: 20rem;">
-                                <div class="card-img">
-                                    <img src="./images/card-img1.png" class="card-img-top" alt="...">
-                                </div>
+    <section class="card-section">
+        <div class="wrapper">
 
-                                <div class="card-body">
-                                    <h2 class="card-title text-uppercase text-center fs-22"> Manufacturing</h2>
-                                    <p class="card-text text-center">PCG uses top-quality raw materials to produce
-                                        custom corrugated
-                                        containers tailored to your needs. Our 522,000 sq. ft. facility runs 24/7, and
-                                        our customer service team is available Monday to Friday, 8 a.m. to 5 p.m</p>
+            <div
+                class="card-inner d-flex justify-content-center align-items-center pad100 flex-column align-content-center">
+                <h2 class="text-center fs-44">Quality & Service need to done</h2>
+                <img src="./images/border.png" />
+                <p class="text-center pb-60">At President Container Group, quality and service aren’t just words—they’re
+                    promises. We fully<br /> satisfy our customers’ needs without compromise</p>
+                <div class="row w-100">
 
-                                </div>
+                    <div class="col-3 p-0">
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-img">
+                                <img src="./images/card-img1.png" class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h2 class="card-title text-uppercase text-center fs-22"> Manufacturing</h2>
+                                <p class="card-text text-center">PCG uses top-quality raw materials to produce
+                                    custom corrugated
+                                    containers tailored to your needs. Our 522,000 sq. ft. facility runs 24/7, and
+                                    our customer service team is available Monday to Friday, 8 a.m. to 5 p.m</p>
+
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card" style="width: 20rem;">
-                                <div class="card-img">
-                                    <img src="./images/card-img-2.jpg" class="card-img-top" alt="...">
-                                </div>
+                    </div>
+                    <div class="col-3 p-0">
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-img">
+                                <img src="./images/card-img-2.jpg" class="card-img-top" alt="...">
+                            </div>
 
-                                <div class="card-body">
-                                    <h2 class="card-title text-center  fs-22">Design</h2>
-                                    <p class="card-text text-center">Our expert design team collaborates with clients
-                                        from concept
-                                        to completion, providing full-color renderings and working closely with
-                                        production to bring ideas to life.</p>
+                            <div class="card-body">
+                                <h2 class="card-title text-center  fs-22">Design</h2>
+                                <p class="card-text text-center">Our expert design team collaborates with clients
+                                    from concept
+                                    to completion, providing full-color renderings and working closely with
+                                    production to bring ideas to life.</p>
 
-                                </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card" style="width: 20rem;">
-                                <div class="card-img">
-                                    <img src="./images/card-img3.png" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                    <h2 class="card-title text-center  fs-22">Assembly & Fulfillment</h2>
-                                    <p class="card-text text-center">PCG offers product fulfillment and assembly in our
-                                        60,000 sq.
-                                        ft. facility—perfect for clients lacking space or staff. We deliver fast,
-                                        cost-effective, and high-quality service you can count on.</p>
+                    </div>
+                    <div class="col-3 p-0">
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-img">
+                                <img src="./images/card-img3.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title text-center  fs-22">Assembly & Fulfillment</h2>
+                                <p class="card-text text-center">PCG offers product fulfillment and assembly in our
+                                    60,000 sq.
+                                    ft. facility—perfect for clients lacking space or staff. We deliver fast,
+                                    cost-effective, and high-quality service you can count on.</p>
 
-                                </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card" style="width: 20rem;">
-                                <div class="card-img">
-                                    <img src="./images/card-img4.png" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                    <h2 class="card-title text-center  fs-22">Just-in-Time<br />
-                                        Stocking Program</h2>
-                                    <p class="card-text text-center">We dedicate 60,000 sq. ft. to our Just-in-Time
-                                        Stocking
-                                        Program, managing inventory for qualified customers with delivery in 24–48
-                                        hours.</p>
+                    </div>
+                    <div class="col-3 p-0">
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-img">
+                                <img src="./images/card-img4.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title text-center  fs-22">Just-in-Time<br />
+                                    Stocking Program</h2>
+                                <p class="card-text text-center">We dedicate 60,000 sq. ft. to our Just-in-Time
+                                    Stocking
+                                    Program, managing inventory for qualified customers with delivery in 24–48
+                                    hours.</p>
 
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -270,13 +281,695 @@
             </div>
     </section>
     <section class="fourth">
-        <div class="container-fluid">
+        <div class="container-fluid bg-transparent">
             <div class="fourth-inner">
-                .
+                <!-- <h3> hii this is main section</h3> -->
+                <div class="four">
+                    <div class="four-header text-center ">
+                        <h2 class="fs-44">All Your Packaging Needs in One Place</h2>
+                        <img src="./images/border.png" alt="" class="border-img" />
+                        <p>President Container Group is a family of four companies that not only manufactures
+                            high-quality corrugated <br />cardboard boxes but also offers a wide range of design,
+                            printing, and fulfillment capabilities.</p>
+                    </div>
+                    <div class="tab d-flex justify-content-space-between">
+                        <button class="col-3 tablinks" data-target="London"><img
+                                src="./images/president-logo-removebg-preview.png" alt=""></button>
+                        <button class="col-3 tablinks" class="col-3 tablinks" data-target="Paris"><img class="xyx"
+                                src="./images/ppi-logo-removebg-preview.png" alt=""></button>
+                        <button class="col-3 tablinks" class="col-3 tablinks" data-target="London"><img
+                                src="./images/artisan-logo-removebg-preview.png" alt=""></button>
+                        <button class=" col-3 tablinks" class="tablinks" data-target="Tokyo"><img
+                                src="./images/techpak-logo-removebg-preview.png" alt=""></button>
+
+
+
+
+                    </div>
+
+                    <div id="London" class="tabcontent">
+                        <div class="row row-size">
+                            <div class="col-6">
+                                <h6 class=" text-uppercase size fw-semibold text-uppercase">President Container</h6>
+
+                                <h2 class="fs-44">Custom Box Design & Manufacturing</h2>
+
+                                <p>We design and manufacture custom boxes and custom packaging to help you deliver a
+                                    memorable customer
+                                    experience.</p>
+
+                                <h3>Products:</h3>
+
+                                <div class="tab-btn d-flex flex-row flex-wrap gap-3">
+
+                                    <button class="custom-btn">
+                                        <div class=" btn-icon-section">
+                                            <img src="./images/shipper.png" alt="icon">
+                                        </div>
+                                        <span>Custom Shippers</span>
+                                    </button>
+
+                                    <button class="custom-btn">
+                                        <div class=" btn-icon-section">
+                                            <img src="./images/custom-inserts.png" alt="icon">
+                                        </div>
+                                        <span>Custom inserts</span>
+                                    </button>
+
+                                    <button class="custom-btn">
+                                        <div class=" btn-icon-section">
+                                            <img src="./images/custom-tape.png" alt="icon">
+                                        </div>
+                                        <span>Custom tapes and labels</span>
+                                    </button>
+
+                                    <button class="custom-btn">
+                                        <div class=" btn-icon-section">
+                                            <img src="./images/setting.png" alt="icon">
+                                        </div>
+                                        <span>Add More!</span>
+                                    </button>
+                                </div>
+
+                                <a href="#" class="btn mt-4">EXPLORE PRESIDENT CONTAINER</a>
+                            </div>
+                            <div class="col-6 object-fit">
+                                <img src="./images/box-image.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Paris" class="tabcontent">
+                        <div class="row row-size">
+                            <div class="col-6">
+                                <h6 class="text-danger">President Container</h6>
+
+                                <h2 class="fs-44">Custom Box Design & Manufacturing</h2>
+
+                                <p>We design and manufacture custom boxes and custom packaging to help you deliver a
+                                    memorable customer
+                                    experience.</p>
+
+                                <h6>Products</h6>
+
+                                <a href="#" class="btn">EXPLORE PRESIDENT CONTAINER</a>
+                            </div>
+                            <div class="col-6 object-fit">
+                                <img src="./images/box-image.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent">
+                        <div class="row row-size">
+                            <div class="col-6">
+                                <h6 class="text-danger">President Container</h6>
+
+                                <h2 class="fs-44">Custom Box Design & Manufacturing</h2>
+
+                                <p>We design and manufacture custom boxes and custom packaging to help you deliver a
+                                    memorable customer
+                                    experience.</p>
+
+                                <h6>Products</h6>
+                                <a href="#" class="btn">EXPLORE PRESIDENT CONTAINER</a>
+                            </div>
+                            <div class="col-6 object-fit">
+                                <img src="./images/box-image.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fifth">
+        <div class="container">
+            <div class="fifth-outer">
+                <div
+                    class="fifth-inner d-flex justify-content-center align-items-center flex-column align-content-center">
+                    <h2 class="fs-44">Smarter Packaging Solutions for a Modern World</h2>
+                    <img src="./images/border.png" alt="" class="fifth-border" />
+                    <p class="text-center m-0">From large-scale production to just-in-time delivery and eco-conscious
+                        practices — we deliver <br />packaging that meets today’s business and environmental needs.</p>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card align-items-center">
+                            <img src="./images/speed-icon.png" class="fifth-card" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Speedy, Large-Scale Production</h5>
+                                <p class="card-text m-0">With 625,000 sq. ft. of space and advanced machinery, including
+                                    two
+                                    corrugators, we deliver fast, high-quality corrugated packaging across North
+                                    America.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card align-items-center">
+                            <img src="./images/clock-icon.png" class="fifth-card" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Integrated Automation & Just-in-Time Delivery</h5>
+                                <p class="card-text m-0">We coordinate with your warehouse to determine inventory
+                                    forecasts
+                                    and schedule automatic, just-in-time deliveries.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card align-items-center">
+                            <img src="./images/globe-icon.png" class="fifth-card" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Packaging that Protects the Planet</h5>
+                                <p class="card-text m-0">We do our part to make our products as sustainable as possible
+                                    through ethical fiber sourcing, harnessing solar power for manufacturing operations,
+                                    and in-house recycling processes.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="sixth">
+        <div class="wrapper pad100 ">
+            <div class="sixth-inner">
+                <h2 class="fs-44 ">What Leaders are Saying</h2>
+                <img src="./images/border.png" alt="" />
+            </div>
+            <div class="slide-section">
+
+                <div id="owl-demo" class="owl-carousel owl-theme">
+
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">We needed high-volume packaging on a tight
+                            schedule,
+                            and President Container Group delivered beyond expectations. Their team handled
+                            everything from design to delivery with professionalism and precision.</p>
+
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Mark Bradley.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Mark Badley</h5>
+                                <span>Plant/Operations Manager,
+                                    Vistra Baldwin Energy</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">We’ve worked with many packaging vendors, but
+                            few
+                            offer the production capacity and flexibility that President Container does. Their
+                            custom corrugated designs fit our product line perfectly.</p>
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Gary Hilberg (1).png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Gary Hilberg</h5>
+                                <span>President, Continuum Energy</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">As our business expanded, President Container
+                            scaled
+                            with us effortlessly. Their 625,000 sq. ft. facility and dedicated team make a real
+                            difference.</p>
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Joe Riestenberg.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Joe Riestenberg</h5>
+                                <span>Plant Manager, Vistra Miami
+                                    Fort Station</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">We needed high-volume packaging on a tight
+                            schedule,
+                            and President Container Group delivered beyond expectations. Their team handled
+                            everything from design to delivery with professionalism and precision.</p>
+
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Mark Bradley.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Mark Badley</h5>
+                                <span>Plant/Operations Manager,
+                                    Vistra Baldwin Energy</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">We’ve worked with many packaging vendors, but
+                            few
+                            offer the production capacity and flexibility that President Container does. Their
+                            custom corrugated designs fit our product line perfectly.</p>
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Gary Hilberg.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Gary Hilberg</h5>
+                                <span>President, Continuum Energy</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">As our business expanded, President Container
+                            scaled
+                            with us effortlessly. Their 625,000 sq. ft. facility and dedicated team make a real
+                            difference.</p>
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Joe Riestenberg.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Joe Riestenberg</h5>
+                                <span>Plant Manager, Vistra Miami
+                                    Fort Station</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">We needed high-volume packaging on a tight
+                            schedule,
+                            and President Container Group delivered beyond expectations. Their team handled
+                            everything from design to delivery with professionalism and precision.</p>
+
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Mark Bradley.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Mark Badley</h5>
+                                <span>Plant/Operations Manager,
+                                    Vistra Baldwin Energy</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">We needed high-volume packaging on a tight
+                            schedule,
+                            and President Container Group delivered beyond expectations. Their team handled
+                            everything from design to delivery with professionalism and precision.</p>
+
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Mark Bradley.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Mark Badley</h5>
+                                <span>Plant/Operations Manager,
+                                    Vistra Baldwin Energy</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">We’ve worked with many packaging vendors, but
+                            few
+                            offer the production capacity and flexibility that President Container does. Their
+                            custom corrugated designs fit our product line perfectly.</p>
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Gary Hilberg.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Gary Hilberg</h5>
+                                <span>President, Continuum Energy</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">As our business expanded, President Container
+                            scaled
+                            with us effortlessly. Their 625,000 sq. ft. facility and dedicated team make a real
+                            difference.</p>
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Joe Riestenberg.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Joe Riestenberg</h5>
+                                <span>Plant Manager, Vistra Miami
+                                    Fort Station</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">We’ve worked with many packaging vendors, but
+                            few
+                            offer the production capacity and flexibility that President Container does. Their
+                            custom corrugated designs fit our product line perfectly.</p>
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Gary Hilberg.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Gary Hilberg</h5>
+                                <span>President, Continuum Energy</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <p class="bg-light rounded-3 slide-top">As our business expanded, President Container
+                            scaled
+                            with us effortlessly. Their 625,000 sq. ft. facility and dedicated team make a real
+                            difference.</p>
+                        <div class="image-title d-flex justify-content-center align-items-center">
+                            <div class="client-img">
+                                <img src="./images/Joe Riestenberg.png" alt="" />
+                            </div>
+                            <div class="client-title">
+                                <h5>Joe Riestenberg</h5>
+                                <span>Plant Manager, Vistra Miami
+                                    Fort Station</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="form">
+
+        <div class="row form-outer">
+            <div class="col-6 form-left d-flex justify-content-center align-items-center position-relative">
+
+                <div class="left-inner">
+                    <h2 class="fs-44">Get Your Custom Packaging Solution Quote</h2>
+                    <p>Fill out the form below to receive a personalized quote tailored to your packaging needs. Our
+                        team will get back to you as soon as possible with a detailed proposal.</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="list-style-none pb-1"> <a href="#" class="nav-link text-light d-flex gap-2">
+                                <div class="form-icon">
+                                    <img src="./images/location.png" alt="" />
+                                </div> 200 West Commercial Ave.<br />
+                                Moonachie, New Jersey 07074, US
+                            </a></li>
+                        <li><a href="#" class="nav-link text-light d-flex gap-2">
+                                <div class="form-icon">
+                                    <img src="./images/phone-icon (1).png" alt="">
+                                </div>421-463-0220
+                            </a></li>
+                        <li><a href="#" class="nav-link text-light d-flex gap-2">
+                                <div class="form-icon">
+                                    <img src="./images/email.png" alt="">
+                                </div>marketing@presidentcontainergroup.com
+                            </a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="col-6 p-0">
+                <img src="./images/form-right.png" alt="" class="h-100" />
+            </div>
+            <div class="form-section">
+                <h2 class="fs-44">Request Quotes</h2>
+                <img src="./images/border.png" alt="" />
+
+                <form action="">
+                    <div class="mb-3 d-flex gap-3 ">
+                        <div class="w-100">
+                            <label for="exampleInputEmail1" class="form-label">First Name: <span
+                                    class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="w-100">
+                            <label for="exampleInputEmail1" class="form-label">Last Name: <span
+                                    class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Company Name: <span
+                                class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3 d-flex gap-3 justify-content-center">
+                        <div class="w-100">
+                            <label for="exampleInputEmail1" class="form-label">Email-Address: <span
+                                    class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="w-100">
+                            <label for="exampleInputEmail1" class="form-label">Phone-number <span
+                                    class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="w-100 mb-3">
+                        <label for="exampleInputEmail1" class="form-label">How Did You Here About Us <span
+                                class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="w-100 mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Interested In <span
+                                class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                    <button class="btn submit">Submit a request</a>
+                </form>
             </div>
         </div>
 
     </section>
+    <section class="last-footer-section">
+        <div class="containe-fluid pad100">
+            <div class="outer-section">
+                <div class="top-section">
+                    <h2 class="fs-44">Ideas Unboxed</h2>
+                    <img src="./images/border.png" alt="" />
+                </div>
+                <div class="row d-flex gap-3   pad60">
+                    <div class=" p-0 shadow-sm  bg-light rounded" style="width: 600px;">
+                        <img src="./images/boxes.png" alt="" class="w-100" />
+                        <div class="box-content">
+                            <h3 class="fs-24">Eco-Friendly Packaging: How to Improve Sustainability While
+                                Maintaining Durability</h3>
+                            <p>Sustainability is more than a buzzword – it’s a critical part of every industry. With
+                                growing consumer awareness and stricter regulations surrounding environmental
+                                responsibility, companies across all industries are looking for ways to reduce their
+                                carbon…</p>
+                            <a href="#" class="btn read-more">READ MORE</a>
+                        </div>
+
+
+                    </div>
+                    <div class="d-flex flex-column gap-3 p-0 bg-gray" style="width: 850px;">
+                        <div class="colsection-1 d-flex gap-3  shadow-sm  bg-white rounded">
+                            <img src="./images/tape.png" alt="" />
+                            <div class="boxes-content">
+                                <h6>Tape Adhesion Issues? What To Do When Your Tape Won’t Stick to Your Box</h6>
+                                <p>We’ve all been there. You’re sealing up a shipment or returning a box online, feeling
+                                    good about getting orders out on time.....</p>
+                                <a href="#" class="btn read-more">READ MORE</a>
+                            </div>
+
+                        </div>
+                        <div class="colsection-1 d-flex gap-3  shadow-sm   bg-white rounded">
+                            <img src="./images/tape.png" alt="" />
+                            <div class="boxes-content">
+                                <h6>Tape Adhesion Issues? What To Do When Your Tape Won’t Stick to Your Box</h6>
+                                <p>We’ve all been there. You’re sealing up a shipment or returning a box online, feeling
+                                    good about getting orders out on time.....</p>
+                                <a href="#" class="btn read-more">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="colsection-1 d-flex gap-3  shadow-sm  bg-white rounded">
+                            <img src="./images/brand-box.png" alt="" />
+                            <div class="boxes-content">
+                                <h6>Tape Adhesion Issues? What To Do When Your Tape Won’t Stick to Your Box</h6>
+                                <p>We’ve all been there. You’re sealing up a shipment or returning a box online, feeling
+                                    good about getting orders out on time.....</p>
+                                <a href="#" class="btn read-more">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-outer">
+            <div class="footer-inner row ">
+                <div class="footer-left">
+                    <div class="logo-section d-flex flex-column justify-content-center ">
+                        <img src="./images/logo.png" alt="" class="mx-auto" />
+                        <p class="text-light ">President Container Inc., founded in 1947 by Marvin and George Grossbard,
+                            not
+                            only grew into one of the largest independent manufacturers of corrugated products in the
+                            country, but was also the seed of what has become today’s President Container Group.</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="company-section ">
+                        <h5 class=" text-light">Company</h5>
+                        <ul class="list-unstyled pt">
+                            <li><a href="#" class="nav-link ">ABOUT US</a></li>
+                            <li><a href="#" class="nav-link ">SUSTAINABILITY</a></li>
+                            <li><a href="#" class="nav-link ">SERVICES</a></li>
+                            <li><a href="#" class="nav-link ">JOB-LOTS</a></li>
+                            <li><a href="#" class="nav-link ">RESOURCES</a></li>
+                            <li><a href="#" class="nav-link ">EMPLOYMENT</a></li>
+                        </ul>
+                    </div>
+                    <div class="company-section">
+                        <h5 class=" text-light">QUICK lINK</h5>
+                        <ul class="list-unstyled pt">
+                            <li><a href="#" class="nav-link ">Who we help</a></li>
+                            <li><a href="#" class="nav-link ">Asset Performance</a></li>
+                            <li><a href="#" class="nav-link ">Digital Transformation</a></li>
+                            <li><a href="#" class="nav-link ">Login</a></li>
+                            <li><a href="#" class="nav-link text">Product Demo</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="company-section">
+                        <h5 class=" text-light">Services</h5>
+                        <ul class="list-unstyled pt">
+                            <li><a href="#" class="nav-link ">Manufacturing</a></li>
+                            <li><a href="#" class="nav-link ">Design</a></li>
+                            <li><a href="#" class="nav-link ">Assembly & Fullfillment</a></li>
+                            <li><a href="#" class="nav-link ">Just-In-Time Stocking Program</a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="company-section ">
+                        <h5 class=" text-light">Follow us</h5>
+                        <ul class="list-unstyled pt">
+                            <li><a href="#" class="nav-link d-flex align-items-center gap-2">
+                                    <div class="icon-section">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+
+                                    Linkdein
+                                </a></li>
+                            <li><a href="#" class="nav-link d-flex align-items-center gap-2">
+                                    <div class="icon-section">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <!-- <img src="./images/facebook-white.png" alt=""> -->
+                                    </div> Facebook
+                                </a>
+                            </li>
+                            <li><a href="#" class="nav-link d-flex align-items-center gap-2">
+                                    <div class="icon-section">
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <!-- <img src="./images/twitter-white.png" alt="" /> -->
+                                    </div>Twitter
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="copy-right">
+            <div class="wrapper">
+
+                <div class=" d-flex justify-content-between p-3">
+                    <p class="text-secondary small">© Copyright 2025 presidentcontainergroup.com Allrights reserved.</p>
+                    <p class="text-secondary small">Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 </body>
+<script
+    src="https://www.jqueryscript.net/demo/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/assets/js/jquery-1.9.1.min.js"></script>
+<script
+    src="https://www.jqueryscript.net/demo/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.js"></script>
+<script src="./script.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#owl-demo").owlCarousel({
+            autoPlay: 3000,
+            items: 3,
+            navigation: true,
+            dots: true
+        });
+
+    });
+    function openCompany() {
+
+    }
+</script>
+
+<script>
+
+    $(document).ready(function () {
+        // ✅ Show first tab by default
+        $(".tablinks:first").addClass("active");
+        $(".tabcontent:first").show();
+
+        // Handle tab click
+        $(".tablinks").click(function () {
+            const target = $(this).data("target");
+
+            $(".tablinks").removeClass("active");
+            $(".tabcontent").hide();
+
+            $(this).addClass("active");
+            $("#" + target).fadeIn(200);
+        });
+    });
+</script>
 
 </html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border-top: none;
+      background: transparent;
+
+    }
+
+    .row-size {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: transparent;
+    }
+
+    .container-fluid {
+      background-color: transparent;
+    }
+
+    .object-fit {
+      object-fit: cover;
+    }
+
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      max-width: 1071px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="fourth">
+    <div class="container-fluid">
+      <div class="fourth-inner">
+        <!-- <h3> hii this is main section</h3> -->
+        <div class="four">
+          <div class="four-header text-center ">
+            <h2 class="fs-44">All Your Packaging Needs in One Place</h2>
+            <img src="./images/border.png" alt="" class="border-img" />
+            <p>President Container Group is a family of four companies that not only manufactures
+              high-quality corrugated <br />cardboard boxes but also offers a wide range of design,
+              printing, and fulfillment capabilities.</p>
+          </div>
+          <div class="tab d-flex justify-content-space-between">
+            <button class="col-3 tablinks" data-target="London"><img src="./images/president-logo.png" alt=""></button>
+            <button class="col-3 tablinks" class="col-3 tablinks" data-target="Paris"><img
+                src="./images/artisan-white.png" alt=""></button>
+            <button class="col-3 tablinks" class="col-3 tablinks" data-target="London"><img src="./images/ppi-white.png"
+                alt=""></button>
+            <button class=" col-3 tablinks" class="tablinks" data-target="London"><img src="./images/white-logo-3.png"
+                alt=""></button>
+
+
+
+
+          </div>
+
+          <div id="London" class="tabcontent">
+            <div class="row row-size">
+              <div class="col-6">
+                <h6 class=" text-uppercase size fw-semibold">President Container</h6>
+
+                <h2 class="fs-44">Custom Box Design & Manufacturing</h2>
+
+                <p>We design and manufacture custom boxes and custom packaging to help you deliver a memorable customer
+                  experience.</p>
+
+                <h3>Products:</h3>
+                <a href="#" class="btn">EXPLORE PRESIDENT CONTAINER</a>
+              </div>
+              <div class="col-6 object-fit">
+                <img src="./images/box-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div id="Paris" class="tabcontent">
+            <div class="row row-size">
+              <div class="col-6">
+                <h6 class="text-danger">President Container</h6>
+
+                <h2 class="fs-44">Custom Box Design & Manufacturing</h2>
+
+                <p>We design and manufacture custom boxes and custom packaging to help you deliver a memorable customer
+                  experience.</p>
+
+                <h6>Products</h6>
+                <a href="#" class="btn">EXPLORE PRESIDENT CONTAINER</a>
+              </div>
+              <div class="col-6 object-fit">
+                <img src="./images/box-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div id="Tokyo" class="tabcontent">
+            <div class="row row-size">
+              <div class="col-6">
+                <h6 class="text-danger">President Container</h6>
+
+                <h2 class="fs-44">Custom Box Design & Manufacturing</h2>
+
+                <p>We design and manufacture custom boxes and custom packaging to help you deliver a memorable customer
+                  experience.</p>
+
+                <h6>Products</h6>
+                <a href="#" class="btn">EXPLORE PRESIDENT CONTAINER</a>
+              </div>
+              <div class="col-6 object-fit">
+                <img src="./images/box-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+
+      $(document).ready(function () {
+        // ✅ Show first tab by default
+        $(".tablinks:first").addClass("active");
+        $(".tabcontent:first").show();
+
+        // Handle tab click
+        $(".tablinks").click(function () {
+          const target = $(this).data("target");
+
+          $(".tablinks").removeClass("active");
+          $(".tabcontent").hide();
+
+          $(this).addClass("active");
+          $("#" + target).fadeIn(200);
+        });
+      });
+    </script>
+
+</body>
+
+</html>
