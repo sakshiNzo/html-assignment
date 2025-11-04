@@ -1045,17 +1045,14 @@
 <script>
 
     $(document).ready(function () {
-        // ✅ Show first tab by default
         $(".tablinks:first").addClass("active");
         $(".tabcontent:first").show();
 
-        // Handle tab click
+
         $(".tablinks").click(function () {
             const target = $(this).data("target");
-
             $(".tablinks").removeClass("active");
             $(".tabcontent").hide();
-
             $(this).addClass("active");
             $("#" + target).fadeIn(200);
         });
