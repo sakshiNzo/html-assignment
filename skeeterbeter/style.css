@@ -22,7 +22,10 @@ p {
 }
 
 
-p {
+p,
+h4,
+h5,
+h6 {
     font-family: "Poppins", sans-serif;
 }
 
@@ -105,14 +108,23 @@ a.nav-link {
 
 }
 
-.about-section {
+.abt-section {
     background: url("./images/about-us.jpg") no-repeat center/cover fixed;
     position: relative;
     margin-top: -110px;
     z-index: -1;
     position: relative;
-    height:700px;
+    min-height: 700px;
 
+}
+
+.barrier {
+    background: url("./images/barrier-bg.jpg") no-repeat center/cover fixed;
+    position: relative;
+    margin-top: -110px;
+    z-index: -1;
+    position: relative;
+    min-height: 500px;
 }
 
 .banner-section::after {
@@ -546,10 +558,10 @@ a.nav-link {
     width: calc(100% - 1480px / 2);
 }
 
-.pb {
-    padding-bottom: 50px;
+.pb100 {
+    padding-bottom: 100px;
 }
-
+.pb100
 .about-left h6 {
     line-height: 1.6;
 }
@@ -716,20 +728,330 @@ footer::before {
 
 /* about -section css*/
 
-.about-banner-section{
-    margin-top: -110px;
-   border-radius: 1000px 100px 1000px 100px;
-        box-shadow: 0px 0px 5px #00000042;
-        text-shadow: none;
-        color:red;
-        padding:60px 140px;
-        position: relative;
-        z-index: 2;
-        
-}
-.about-banner-section h4{
-    text-transform: lowercase !important;
-}
-.about-banner-section p{
+.about-banner-section {
+    border-radius: 1000px 100px 1000px 100px;
+    box-shadow: 0px 0px 5px #00000042;
     text-shadow: none;
+    color: rgb(15, 15, 15);
+    padding: 60px 140px;
+    position: relative;
+    z-index: 2;
+    max-width: 1300px;
+    margin: -110px auto 0;
+}
+
+.about-banner-section h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.about-banner-section p {
+    text-shadow: none;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.about-banner-section::before {
+    position: absolute;
+    content: "";
+    background-image: url(./images/fly-left.png);
+    background-size: contain;
+    width: 134px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 112px;
+    left: -210px;
+    animation: animationFramesThree 12s infinite linear alternate;
+    z-index: 1;
+}
+
+.fs23 {
+    font-size: 23px;
+}
+
+.left-img img {
+    max-height: 510px;
+}
+
+.outer {
+    position: relative;
+}
+
+.outer::after {
+    height: 150px;
+    width: 150px;
+    right: 0;
+    bottom: 70px;
+    background-image: url("images/fly-right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 0;
+    position: absolute;
+    content: "";
+    animation: animationFramesThree 12s infinite linear alternate;
+}
+
+/* contact-us page css*/
+
+.contact-right h1 {
+    font-size: 75px;
+}
+
+.yellow {
+    color: #EFC600;
+}
+
+.contact-left img {
+    transform: scaleX(-1);
+}
+
+.contact-inner {
+    box-shadow: 0px 0px 10px #00000026;
+    padding: 50px;
+    border-radius: 40px;
+}
+
+.about-content {
+    padding: 150px 0px 50px;
+}
+
+.contact-r {
+    padding: 40px;
+}
+
+input {
+    height: 60px;
+
+}
+
+input,
+textarea {
+    border-radius: 40px !important;
+    border: 2px solid #0F591F !important;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+label {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.contact-left {
+    padding-right: 40px;
+}
+
+.pad130 {
+    padding: 130px 0px 100px;
+}
+
+h1 {
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.6);
+}
+
+.nav-link:hover {
+    color: #0f591f !important;
+}
+
+.skeeter-right h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #EFC600;
+}
+
+.lh {
+    line-height: 1.8;
+}
+
+.skeeter-outer {
+    gap: 30px;
+}
+
+.skeeter-img img {
+    max-width: 580px;
+
+}
+
+.skeeter-img {
+    position: relative;
+}
+
+.skeeter-img::before {
+    content: "";
+    position: absolute;
+    background-image: url("./images/fly-left.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 240px;
+
+    animation: animationFramesFour 12s infinite linear alternate;
+    background-size: contain;
+}
+
+.skeeter-img::after {
+    content: "";
+    position: absolute;
+    background-image: url("  ./images/fly-right.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 240px;
+    right: 110px;
+    bottom: 240px;
+    animation: animationFramesFour 12s infinite linear alternate;
+    background-size: contain;
+}
+
+.spray-section {
+    background-color: #0F591F;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+.spray-section::after {
+    z-index: 1;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url("./images/curve_ic_top.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    background-size: 100% 100%;
+}
+
+.spray-section::before {
+    z-index: 1;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-image: url("./images/curve_ic_btm.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    background-size: 100% 100%;
+}
+
+.barrier-spray-inner {
+    position: relative;
+}
+
+.barrier-spray-inner::before {
+    content: "";
+    right: 0;
+    top: 110px;
+    background-image: url("./images/fly-right.png");
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    animation: animationFramesFour 12s infinite linear alternate;
+    background-size: contain;
+    z-index: 0;
+}
+
+h6 {
+    font-size: 23px !important;
+    font-weight: bold !important;
+}
+
+.maxh {
+    max-height: 510px;
+}
+
+.skeeter-left {
+    padding-right: 60px;
+}
+
+.pdt {
+    padding-top: 100px;
+}
+
+.skeeter-content,
+.mosquito-left {
+    position: relative;
+}
+
+.skeeter-content::after {
+    height: 150px;
+    width: 150px;
+    right: -76px;
+    bottom: 70px;
+    background-image: url("images/fly-right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 0;
+    position: absolute;
+    content: "";
+    animation: animationFramesThree 12s infinite linear alternate;
+}
+
+
+.mosquito-left::before {
+    height: 150px;
+    width: 150px;
+    top: -80px;
+    left: -120px;
+    background-image: url("https://skeeterbeeter.net/wp-content/uploads/2023/01/mos_left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 0;
+    position: absolute;
+    content: "";
+    animation: animationFramesThree 12s infinite linear alternate;
+}
+
+.offer-outer {
+    border-radius: 1000px 100px 1000px 100px;
+    background-color: #EFC600;
+    max-height: 527px;
+    position: relative;
+    z-index: 1;
+}
+
+.offer-inner {
+    padding: 60px;
+}
+
+.offer-outer::before {
+    position: absolute;
+    content: "";
+    background: #0e5b21;
+    width: 440px;
+    height: calc(100% - 80px);
+    left: 20px;
+    top: unset;
+    border-radius: 680px 150px 710px 250px;
+    bottom: 0;
+}
+
+.offer-img img {
+
+    max-width: 520px;
+    object-fit: cover;
+    margin-top: -150px;
+    padding-left: 100px;
+
+}
+
+
+.offer-img img {
+    margin-top: -150px;
+    max-height: 520px;
 }
