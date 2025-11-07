@@ -4,6 +4,7 @@
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     font-style: normal;
+
 }
 
 .container {
@@ -38,9 +39,8 @@ header {
     height: 190px;
     position: relative;
     z-index: 99;
-    transition: all 0.8s ease-in-out;
-
 }
+
 
 .wrapper {
     max-width: 1480px;
@@ -59,6 +59,7 @@ a.nav-link {
 
 .header-btn {
     position: relative;
+    width: 25%;
 }
 
 .header-btn::before {
@@ -79,7 +80,6 @@ a.nav-link {
 .number {
     position: relative;
     z-index: 4;
-    width: 520px;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -91,11 +91,20 @@ a.nav-link {
 .number p {
     font-size: 16px;
     font-weight: 700;
+    padding: 0px 30px;
 }
 
 .number a {
     font-size: 28px;
     color: #FFD60D;
+}
+
+.logo {
+    width: 35%;
+}
+
+.hdactive .number a {
+    font-size: 20px;
 }
 
 .banner-section {
@@ -520,6 +529,10 @@ a.nav-link {
     padding: 50px 0px;
 }
 
+.pt100 {
+    padding: 100px 0px 0px;
+}
+
 .cards h3 :hover {
     background-color: black;
 }
@@ -528,8 +541,12 @@ a.nav-link {
     position: relative;
 }
 
-.card-inner::after {
-    background-image: url("https://skeeterbeeter.net/wp-content/uploads/2023/01/flies.png");
+.card-inner::after,
+.automatic::after,
+.outer::after,
+.barrier-spray-inner::after,
+.skeeter-content::after {
+    background-image: url("./images/fly-right.png");
     background-repeat: no-repeat;
     width: 130px;
     height: 130px;
@@ -561,8 +578,8 @@ a.nav-link {
 .pb100 {
     padding-bottom: 100px;
 }
-.pb100
-.about-left h6 {
+
+.pb100 .about-left h6 {
     line-height: 1.6;
 }
 
@@ -574,12 +591,16 @@ a.nav-link {
     position: relative;
 }
 
-.about-heading::before {
+.about-heading::before,
+.automatic-left-img::before,
+.bottom-content::before,
+.about-banner-section::before,
+.mosquito-left::before {
     height: 150px;
     width: 150px;
     top: -80px;
     left: -120px;
-    background-image: url("https://skeeterbeeter.net/wp-content/uploads/2023/01/mos_left.png");
+    background-image: url("./images/fly-left.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -599,7 +620,12 @@ a.nav-link {
     margin-bottom: 20px;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
+    color: black;
 
+}
+
+.footer-log img {
+    margin-top: -10px;
 }
 
 .automatic-left {
@@ -611,20 +637,7 @@ a.nav-link {
     position: relative;
 }
 
-.automatic::after {
-    height: 150px;
-    width: 150px;
-    right: 0;
-    bottom: 70px;
-    background-image: url("images/fly-right.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    z-index: 0;
-    position: absolute;
-    content: "";
-    animation: animationFramesThree 12s infinite linear alternate;
-}
+
 
 footer {
     position: relative;
@@ -752,20 +765,6 @@ footer::before {
     line-height: 1.8;
 }
 
-.about-banner-section::before {
-    position: absolute;
-    content: "";
-    background-image: url(./images/fly-left.png);
-    background-size: contain;
-    width: 134px;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 112px;
-    left: -210px;
-    animation: animationFramesThree 12s infinite linear alternate;
-    z-index: 1;
-}
 
 .fs23 {
     font-size: 23px;
@@ -779,20 +778,7 @@ footer::before {
     position: relative;
 }
 
-.outer::after {
-    height: 150px;
-    width: 150px;
-    right: 0;
-    bottom: 70px;
-    background-image: url("images/fly-right.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    z-index: 0;
-    position: absolute;
-    content: "";
-    animation: animationFramesThree 12s infinite linear alternate;
-}
+
 
 /* contact-us page css*/
 
@@ -815,7 +801,7 @@ footer::before {
 }
 
 .about-content {
-    padding: 150px 0px 50px;
+    padding: 120px 0px 50px;
 }
 
 .contact-r {
@@ -911,37 +897,43 @@ h1 {
 
 .spray-section {
     background-color: #0F591F;
-    height: 700px;
+
     position: relative;
-    z-index: 1;
+    z-index: 0;
+
+}
+
+.pt150 {
+    padding-top: 150px;
+
 }
 
 .spray-section::after {
-    z-index: 1;
+    z-index: 0;
     content: "";
     bottom: 0;
     left: 0;
     right: 0;
-    top: 0;
-    background-image: url("./images/curve_ic_top.png");
+
+    background-image: url(" ./images/curve_ic_btm.png");
     background-repeat: no-repeat;
     width: 100%;
-    height: 85px;
+    height: 200px;
     position: absolute;
     background-size: 100% 100%;
 }
 
 .spray-section::before {
-    z-index: 1;
+    z-index: 0;
     content: "";
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
 
-    background-image: url("./images/curve_ic_btm.png");
+    background-image: url("./images/curve_ic_top.png ");
     background-repeat: no-repeat;
     width: 100%;
-    height: 150px;
+    height: 200px;
     position: absolute;
     background-size: 100% 100%;
 }
@@ -950,19 +942,7 @@ h1 {
     position: relative;
 }
 
-.barrier-spray-inner::before {
-    content: "";
-    right: 0;
-    top: 110px;
-    background-image: url("./images/fly-right.png");
-    background-repeat: no-repeat;
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    animation: animationFramesFour 12s infinite linear alternate;
-    background-size: contain;
-    z-index: 0;
-}
+
 
 h6 {
     font-size: 23px !important;
@@ -986,37 +966,6 @@ h6 {
     position: relative;
 }
 
-.skeeter-content::after {
-    height: 150px;
-    width: 150px;
-    right: -76px;
-    bottom: 70px;
-    background-image: url("images/fly-right.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    z-index: 0;
-    position: absolute;
-    content: "";
-    animation: animationFramesThree 12s infinite linear alternate;
-}
-
-
-.mosquito-left::before {
-    height: 150px;
-    width: 150px;
-    top: -80px;
-    left: -120px;
-    background-image: url("https://skeeterbeeter.net/wp-content/uploads/2023/01/mos_left.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    z-index: 0;
-    position: absolute;
-    content: "";
-    animation: animationFramesThree 12s infinite linear alternate;
-}
-
 .offer-outer {
     border-radius: 1000px 100px 1000px 100px;
     background-color: #EFC600;
@@ -1033,7 +982,7 @@ h6 {
     position: absolute;
     content: "";
     background: #0e5b21;
-    width: 440px;
+    width: 32%;
     height: calc(100% - 80px);
     left: 20px;
     top: unset;
@@ -1042,16 +991,131 @@ h6 {
 }
 
 .offer-img img {
-
-    max-width: 520px;
+    max-width: 570px;
     object-fit: cover;
     margin-top: -150px;
     padding-left: 100px;
-
 }
 
 
 .offer-img img {
     margin-top: -150px;
     max-height: 520px;
+}
+
+.automatic-banner {
+    background: url("./images/automated-bn.jpg") no-repeat center/cover fixed;
+    position: relative;
+    margin-top: -110px;
+    z-index: -1;
+    position: relative;
+    min-height: 300px;
+}
+
+.bg-yellow {
+    background-color: #EFC600;
+}
+
+.bottom-img img {
+    max-height: 510px;
+}
+
+.spacing {
+    padding: 250px 0px 120px;
+}
+
+.pr60 {
+    padding-right: 60px;
+}
+
+.hdactive .logo img {
+    max-width: 70%;
+}
+
+.hdactive .header-btn::before {
+    content: "";
+    background-image: url("./images/bg-btn.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    position: absolute;
+    transform: rotate(-3deg);
+    right: -61px;
+    bottom: -14px;
+    z-index: 1;
+    padding: 0px 10px;
+}
+
+.hdactive a {
+    padding-bottom: 10px !important;
+}
+
+.hdactive .number {
+    padding: 10px 0px 0px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.black {
+    color: #000;
+}
+
+.pl60 {
+    padding-left: 60px;
+}
+
+.hdactive header {
+    transition: all 0.5s ease-in-out;
+}
+
+/* responsive design breakoints*/
+
+@media (max-width:1400px) {
+    header {
+        height: 100px;
+
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    /* header ul li .nav-link{
+        font-size: 12px;
+    } */
+    .header-btn::before {
+        content: "";
+        background-image: url("./images/bg-btn.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 382px;
+        height: 109px;
+        position: absolute;
+        transform: rotate(-3deg);
+        right: 20px;
+        bottom: -43px;
+        z-index: 1;
+        overflow: hidden
+    }
+
+    .list-unstyled {
+        padding-bottom: 10px;
+    }
+
+    .number {
+        top: 11px;
+        align-items: center;
+        right: -13px;
+    }
+
+    .number a {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
 }

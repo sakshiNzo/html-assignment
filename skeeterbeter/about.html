@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skeeter Beeter</title>
+    <link rel="icon" type="image/png" href="./images/logo1.png" />
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -47,7 +48,8 @@
                         <ul class="dropdown-menu bg-dark">
                             <li><a class="dropdown-item text-white bg-dark" href="./barriers.html">Mosquito Barriers</a>
                             </li>
-                            <li><a class="dropdown-item text-white bg-dark" href="#">Automatic Systems</a></li>
+                            <li><a class="dropdown-item text-white bg-dark" href="./automatic.html">Automatic
+                                    Systems</a></li>
 
                         </ul>
                     </li>
@@ -80,7 +82,7 @@
     </section>
     <section>
         <div class="wrapper">
-            <div class="about-banner-section bg-white">
+            <div class="about-banner-section bg-white" data-aos="fade-up" data-aos-duration="1000">
                 <h4 class="text-center m-0">Skeeter Beeter is a locally owned and operated company that provides the
                     Lowcountry with the weapons they need to keep mosquitoes at bay.</h4>
                 <p class="text-center fs-17">We understand that fighting against ticks and mosquitoes is not just
@@ -99,7 +101,7 @@
                 <div class="left-img w-50 ">
                     <img src="./images/about-content-img.jpg" alt="" class="hover-img">
                 </div>
-                <div class="right-content w-50">
+                <div class="right-content w-50" data-aos="fade-left" data-aos-duration="1000">
                     <h3 class="green pb35 m-0">Customer service and environment</h3>
                     <h6 class="pb35 fs-23 m-0">We are commited to customer services and the environment</h6>
                     <p class="pb35 m-0 fs-17 lh-lg">Our mosquito barrier spray is safe for animals and humans and
@@ -145,7 +147,6 @@
     <script>
         const images = document.querySelectorAll(".hover-img");
 
-        // Move effect on mouse move
         document.body.addEventListener("mousemove", (e) => {
             const x = e.clientX / window.innerWidth - 0.5;
             const y = e.clientY / window.innerHeight - 0.5;
@@ -158,12 +159,27 @@
             });
         });
 
-        // Reset when mouse leaves
+
         document.body.addEventListener("mouseleave", () => {
             images.forEach(img => {
                 img.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
             });
         });
+    </script>
+
+    <script>
+        var $ = jQuery.bind({});
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 300) {
+                $("header").addClass("hdactive");
+            } else {
+                $("header").removeClass("hdactive");
+            }
+        });  
+    </script>
+        <script>
+        AOS.init();
     </script>
 </body>
 
