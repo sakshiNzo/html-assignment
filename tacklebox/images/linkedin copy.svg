@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<defs>
+		<image  width="20" height="20" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAAXNSR0IB2cksfwAAAJBQTFRFSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/K6bIwXQAAADB0Uk5TAEiaeAr/r/4E4Quz5kABFDA0CV6KgVcNUMDQROXtBkrnOj3xf2+bQnKgMnCCHkZkbmp4igAAAKFJREFUeJy1z00LAVEUxvH/mZmosZDyMl0LEhLy/b+HUkZSNkOSQcKMwaXUnbv3LM7i13PqHEF0HuQi4umRWOi44Mgtj64D3tVq+pIU5Wyh7vknLCw/wY2p6ANS/3OJbJFgD9UItYP68a5rjcvBxGDzXfZqJv6iTGxKpGQNLRPbC+ivIDOxM4fBErom9mYwCi0sxf/E4QvCjHGm/5vCJIXCGzHNT8YWtF+8AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="linkedin copy" href="#img1" x="0" y="0"/>
+</svg>

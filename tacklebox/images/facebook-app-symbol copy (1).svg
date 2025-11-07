@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 20" width="11" height="20">
+	<defs>
+		<image  width="11" height="20" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAMAAABs8jdaAAAAAXNSR0IB2cksfwAAAGBQTFRFSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KSv/KsqpCJAAAACB0Uk5TAFK03eDfs5H/P5TZf3BitT7AIJqw7LqAn3zE+ORQqBxM2KaKAAAAX0lEQVR4nGNkAAFGCAAx2cHkHxDJ+Z8Bzub6x8DADFXD/5OBgeMDUBeQLfgdKPcOjS3MyMD4mYGB7x9QCwsLAxQIILEFGaVeMYi/ZWAQecEgidMcKrLlnjEwSD9kYAAA4vohlm5X/0kAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="facebook-app-symbol copy" href="#img1" x="0" y="0"/>
+</svg>
