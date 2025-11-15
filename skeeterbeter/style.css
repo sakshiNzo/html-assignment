@@ -134,25 +134,28 @@ a.nav-link {
 }
 
 .abt-section {
-    background: url("./images/about-us.jpg") no-repeat center/cover fixed;
+    background: url("./images/about-us.jpg") no-repeat center right 30% / cover;
     position: relative;
     margin-top: -110px;
     z-index: -1;
     position: relative;
-    min-height: 700px;
+    height: 850px;
+
 
 }
 
-.barrier {
-    background: url("./images/barrier-bg.jpg") no-repeat center/cover fixed;
+.barriers {
+    background: url("./images/barrier-bg.jpg") no-repeat center left 40% /cover;
     position: relative;
     margin-top: -110px;
     z-index: -1;
     position: relative;
-    min-height: 500px;
+    height: 850px;
 }
 
-.banner-section::after {
+.banner-section::after,
+.abt-section::after,
+.barriers::after {
     z-index: 1;
     content: "";
     bottom: 0;
@@ -166,7 +169,9 @@ a.nav-link {
     background-size: 100% 100%;
 }
 
-.banner-section::before {
+.banner-section::before,
+.abt-section::before,
+.barriers::before {
     background-color: transparent;
     background-image: linear-gradient(180deg, #00000000 0%, #000000 100%);
     opacity: 0.61;
@@ -179,7 +184,9 @@ a.nav-link {
     z-index: 0;
 }
 
-.banner-section h1 {
+.banner-section h1,
+.abt-section h1,
+.barriers h1 {
     font-size: 75px;
     text-align: center;
     color: white;
@@ -247,7 +254,11 @@ a.nav-link {
 }
 
 .about-text .deftbtn,
-.about .deftbtn {
+.about .deftbtn,
+.right-content .deftbtn,
+.contact-inner .deftbtn,
+.contact-inner .deftbtn,
+.offer-text .deftbtn {
     margin: 0;
 }
 
@@ -378,7 +389,17 @@ a.nav-link {
 .about-left,
 .about-right,
 .automatic-left,
-.automatic-right {
+.automatic-right,
+.left-img,
+.right-content,
+.skeeter-img,
+.skeeter-right,
+.mosquito-right,
+.mosquito-left,
+.skeeter-content,
+.skeeter-img,
+.offer-img,
+.offer-text {
     width: 50%;
 }
 
@@ -606,6 +627,9 @@ a.nav-link {
 .automatic::after {
     top: 0;
 }
+.skeeter-content::after{
+    bottom:0;
+}
 
 .green {
     color: #0f591f;
@@ -661,6 +685,11 @@ a.nav-link {
 
 }
 
+.mosquito-left::before {
+    top: 0;
+    left: -180px;
+}
+
 .arrow-list li {
     background-image: url("https://skeeterbeeter.net/wp-content/uploads/2023/01/arr_ic.png");
     background-size: contain;
@@ -714,7 +743,7 @@ footer::before {
     width: 100%;
     position: absolute;
     content: "";
-    background-image: url("https://skeeterbeeter.net/wp-content/uploads/2023/01/review_top.png");
+    background-image: url("./images/review_top.png");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -877,6 +906,10 @@ textarea {
     border: 2px solid #0F591F !important;
 }
 
+textarea {
+    width: 100%;
+}
+
 .fs-16 {
     font-size: 16px;
 }
@@ -1009,11 +1042,10 @@ h6 {
 
 .maxh {
     max-height: 510px;
+
 }
 
-.skeeter-left {
-    padding-right: 60px;
-}
+
 
 .pdt {
     padding-top: 100px;
@@ -1027,7 +1059,6 @@ h6 {
 .offer-outer {
     border-radius: 1000px 100px 1000px 100px;
     background-color: #EFC600;
-    max-height: 527px;
     position: relative;
     z-index: 1;
 }
@@ -1168,9 +1199,9 @@ a.dropdown-item:hover {
         height: 130px;
     }
 
-    section {
+    /* section {
         overflow: hidden;
-    }
+    } */
 
 
 
@@ -1290,13 +1321,22 @@ a.dropdown-item:hover {
     }
 
     .card-inner::after,
-    .automatic::after {
+    .automatic::after,
+    .outer::after {
         background-size: 50px;
+    }
+
+    .outer::after {
+        top: 0;
     }
 
     .about-section,
     .about {
         padding: 0px 20px;
+    }
+
+    .contact .pad130 {
+        padding: 130px 20px 100px;
     }
 
     footer .wrapper {
@@ -1307,6 +1347,24 @@ a.dropdown-item:hover {
         font-size: 30px;
         padding: 30px;
     }
+
+    .about-content {
+        padding: 120px 20px 50px;
+    }
+
+
+
+    .pad100 {
+        padding: 100px 20px;
+    }
+
+    .pb100 {
+        padding: 0px 20px 100px;
+    }
+ .mosquito-left::before {
+    top:0;
+left:0;
+ }
 }
 
 @media (max-width:1439px) {
@@ -1317,6 +1375,10 @@ a.dropdown-item:hover {
 
     .barrier-section {
         padding: 100px 20px;
+    }
+
+    .about-second {
+        padding: 0px 20px;
     }
 
     .logo img {
@@ -1334,22 +1396,33 @@ a.dropdown-item:hover {
 
 
     .hdactive .number {
-        top: -10px;
+        top: -2px;
+        right: -52px
     }
 
 
     .hdactive .header-btn::before {
-        bottom: -4px
+        bottom: -25px
     }
 
     a.nav-link {
         padding: 8px;
     }
 
-    .banner-section h1 {
+    .banner-section h1,
+    .abt-section h1,
+    .barriers h1 {
         max-width: 800px;
         margin: 0 auto;
         font-size: 50px;
+    }
+
+    .contact-right h1 {
+        font-size: 50px;
+    }
+
+    .contact-left img {
+        max-height: 500px;
     }
 
     .banner-section p {
@@ -1365,7 +1438,7 @@ a.dropdown-item:hover {
     }
 
     .number {
-        right: -112px;
+        right: -102px;
     }
 
     header {
@@ -1377,7 +1450,9 @@ a.dropdown-item:hover {
     .barrier-section h2,
     .about-text h2,
     .about h2,
-    .card-inner-text h2 {
+    .card-inner-text,
+    .skeeter-right h2,
+    .barrier-spray h2 {
         font-size: 45px;
     }
 
@@ -1394,6 +1469,30 @@ a.dropdown-item:hover {
         background-size: cover;
     }
 
+    .about-banner-section {
+        border-radius: 550px 100px 550px 100px;
+        padding: 60px 130px;
+    }
+
+    .right-content h3 {
+        font-size: 28px;
+    }
+
+    .offer-text h3 {
+        font-size: 35px;
+    }
+
+    .spray-section::after,
+    .spray-section::before {
+        height: 100px;
+    }
+
+    .pt150 {
+        padding-top: 80px;
+    }
+    .offer-img img{
+        max-width:510px;
+    }
 }
 
 a.nav-link.dropdown-toggle.show {
@@ -1457,13 +1556,17 @@ a.nav-link.dropdown-toggle.show {
         font-size: 12px;
     }
 
-    .banner-section h1 {
+    .banner-section h1,
+    .abt-section h1,
+    .barriers h1 {
         font-size: 45px;
         max-width: 690px;
 
     }
 
-    .banner-section {
+    .banner-section,
+    .abt-section,
+    .barriers {
         height: 700px;
     }
 
@@ -1471,15 +1574,19 @@ a.nav-link.dropdown-toggle.show {
         font-size: 16px;
     }
 
-    .banner-section::after {
+    .banner-section::after,
+    .barriers::after {
         background-size: cover;
     }
 
-    .barrier-left p:first-child {
+    .barrier-left p:first-child,
+    .skeeter-right h5 {
         font-size: 20px;
     }
 
-    .barrier-left h2 {
+    .barrier-left h2,
+    .skeeter-right h2,
+    .barrier-spray h2 {
         font-size: 30px;
 
     }
@@ -1487,6 +1594,10 @@ a.nav-link.dropdown-toggle.show {
     .about-text h2,
     .card-inner-text h2 {
         font-size: 35px;
+    }
+
+    .skeeter-right p {
+        font-size: 16px;
     }
 
     .barrier-left p:last-child {
@@ -1511,6 +1622,47 @@ a.nav-link.dropdown-toggle.show {
         font-size: 25px;
         height: 250px;
         width: 250px;
+    }
+
+    .right-content h3,
+    .mosquito-left h3,
+    .skeeter-content h3 {
+        font-size: 28px;
+    }
+
+    .contact-left {
+        width: 40%;
+        padding: 0;
+    }
+
+    .contact-right {
+        width: 60%;
+    }
+
+    .contact-left img {
+        max-height: 450px;
+        width: 100%;
+    }
+
+    .spray-section::after,
+    .spray-section::before {
+        height: 80px;
+    }
+
+    .pt150 {
+        padding-top: 50px;
+    }
+
+    .barrier-spray br {
+        display: none;
+    }
+
+    .offer-img img {
+        max-width: 450px;
+    }
+
+    .offer-text h3 {
+        font-size: 25px;
     }
 }
 
@@ -1705,11 +1857,13 @@ a.nav-link.dropdown-toggle.show {
         padding: 0 20px;
     }
 
-    .banner-section {
-        background-image: url("./images/banner-bg.jpg");
+    .banner-section,
+    .barriers {
+
         height: 700px;
 
     }
+
 
     .footer-logo img {
         max-width: 190px;
@@ -1741,12 +1895,14 @@ a.nav-link.dropdown-toggle.show {
         padding: 25px 0px;
     }
 
-    .barrier-right img {
+    .barrier-right img,
+    .skeeter-img img {
         max-width: 500px;
 
     }
 
-    .barrier-right {
+    .barrier-right,
+    .skeeter-img {
         margin: auto 0;
     }
 
@@ -1755,7 +1911,7 @@ a.nav-link.dropdown-toggle.show {
     }
 
     .pad100 {
-        padding: 50px 0px;
+        padding: 50px 20px;
     }
 
     .barrier-left p:first-child {
@@ -1767,8 +1923,14 @@ a.nav-link.dropdown-toggle.show {
 
     }
 
-    .barrier-inner {
+    .barrier-inner,
+    .mosquito-barrier-outer {
         flex-direction: column-reverse;
+    }
+
+    .skeeter-outer,
+    .skeetr-outer {
+        flex-direction: column;
     }
 
     .barrier-right {
@@ -1785,7 +1947,8 @@ a.nav-link.dropdown-toggle.show {
 
 
 
-    .barrier-inner h2 {
+    .barrier-inner h2,
+    .skeeter-right h2 {
         max-width: 500px;
         margin: 0 auto;
     }
@@ -1840,13 +2003,30 @@ a.nav-link.dropdown-toggle.show {
     .about-left,
     .about-right,
     .automatic-left,
-    .automatic-right {
+    .automatic-right,
+    .left-img,
+    .right-content,
+    .skeeter-img,
+    .skeeter-right,
+    .mosquito-left,
+    .mosquito-right,
+    .skeeter-content,
+    .skeeter-left {
         width: 100%;
         text-align: center;
     }
 
+    .maxh {
+        margin: 0 auto
+    }
+
     .about-right img,
-    .automatic-left img {
+    .automatic-left img,
+    .left-img img,
+    .skeeter-img img,
+    .skeeter-img,
+    .skeeter-left img,
+    .mosquito-right img {
         max-height: 400px;
     }
 
@@ -1874,7 +2054,22 @@ a.nav-link.dropdown-toggle.show {
     .about h3,
     .about h6,
     .about p,
-    .automatic ul {
+    .automatic ul,
+    .right-content h3,
+    .right-content h6,
+    .right-content p,
+    .offer-text h3,
+    .offer-tex p,
+    .mosquito-left h3,
+    .mosquito-left h6,
+    .mosquito-left p.skeeter-content h3,
+    .skeeter-content h6,
+    .skeeter-content p,
+    .barrier-spray h2,
+    .barrier-spray p,
+    .skeeter-right h2,
+    .skeeter-right h5,
+    .skeeter-right p {
         padding-bottom: 20px;
     }
 
@@ -1912,7 +2107,10 @@ a.nav-link.dropdown-toggle.show {
     }
 
     .about-left .deftbtn,
-    .automatic-right .deftbtn {
+    .automatic-right .deftbtn,
+    .right-content .deftbtn,
+    .contact-inner .deftbtn,
+    .offer-text .deftbtn {
         margin: 0 auto;
     }
 
@@ -1934,14 +2132,105 @@ a.nav-link.dropdown-toggle.show {
             height: 10px;
         }
     }
+
+    .about-banner-section {
+        border-radius: 150px 50px 150px 50px;
+        padding: 40px 80px;
+    }
+
+    .about-banner-section h4 {
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .about-banner-section p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .about-content .outer {
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding: 80px 20px 50px;
+    }
+
+    .about-banner-section::before {
+        display: none;
+    }
+
+
+    .contact-right {
+        width: 100%;
+
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .contact-inner {
+        padding: 50px;
+    }
+
+    .contact-right h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .contact-outer,
+    .offer-inner {
+        flex-direction: column;
+    }
+
+    .contact .pad130 {
+        padding: 80px 20px;
+    }
+
+    .pdt {
+        padding-top: 50px;
+    }
+
+    .offer-inner {
+        gap: 20px;
+    }
+
+    .offer-outer::before {
+        display: none;
+    }
+
+    .offer-outer {
+        border-radius: 200px 50px 200px 50px;
+    }
+
+    .offer {
+        padding: 100px 20px;
+    }
+
+    .offer-text,
+    .offer-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .offer-img img {
+        margin-top: -110px;
+        padding: 0px;
+    }
 }
+
+
+
+
 
 @media (max-width:768px) {
     .menus.active .list-unstyled {
         width: 300px;
     }
 
-    .banner-section h1 {
+    .banner-section h1,
+    .abt-section h1 {
         font-size: 34px;
         max-width: 520px;
     }
@@ -2039,7 +2328,8 @@ a.nav-link.dropdown-toggle.show {
         font-size: 16px;
     }
 
-    .about h3 {
+    .about h3,
+    .offer-text h3 {
         font-size: 23px;
     }
 
@@ -2079,6 +2369,50 @@ a.nav-link.dropdown-toggle.show {
 
     .about br {
         display: none;
+    }
+
+    .about-banner-section {
+        border-radius: 30px;
+        padding: 40px 30px;
+    }
+
+    .about-banner-section h4 {
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .right-content p {
+        font-size: 16px;
+    }
+
+    .contact-inner div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-right h1 {
+        font-size: 40px;
+    }
+
+    .contact .pad130 {
+        padding: 60px 20px;
+    }
+
+    .barrier-spray h2 {
+        font-size: 25px;
+    }
+
+    .offer-outer {
+        border-radius: 100px 50px 100px 50px;
+    }
+
+    .offer-inner {
+        padding: 20px;
+    }
+
+    .offer-img img {
+        margin-top: -110px;
+        max-width: 200px;
     }
 }
 
@@ -2124,7 +2458,9 @@ a.nav-link.dropdown-toggle.show {
 
 
 
-    .banner-section {
+    .banner-section,
+    .abt-section,
+    .barrier {
         height: 600px;
     }
 
@@ -2175,7 +2511,7 @@ a.nav-link.dropdown-toggle.show {
     }
 
     .pad100 {
-        padding: 50px 0px;
+        padding: 50px 20px;
     }
 
     .footer-bottom p {
@@ -2188,21 +2524,36 @@ a.nav-link.dropdown-toggle.show {
     .barrier-right::after,
     .barrier-right::before,
     .about-heading::before,
-    .automatic::after {
+    .automatic::after,
+    .banner-section::after,
+    .abt-section::after,
+    .outer::after {
         display: none;
     }
 
-    .banner-section::after {
-        display: none;
-    }
+
 
     .banner-section {
         padding: 0px 20px;
     }
 
-    .banner-section h1 {
+    .banner-section h1,
+    .abt-section h1 {
         font-size: 33px;
         max-width: 520px;
+    }
+
+    .contact-right h1 {
+        font-size: 33px;
+    }
+
+    .contact-inner {
+        padding: 20px 30px;
+        border-radius: 20px;
+    }
+
+    .offer-outer {
+        border-radius: 50px;
     }
 }
 
@@ -2211,7 +2562,8 @@ a.nav-link.dropdown-toggle.show {
         max-width: 350px;
     }
 
-    .barrier-section h2 {
+    .barrier-section h2,
+    .skeeter-right h2 {
         font-size: 25px;
     }
 
@@ -2236,8 +2588,13 @@ a.nav-link.dropdown-toggle.show {
         font-size: 20px;
     }
 
-    .banner-section h1 {
+    .banner-section h1,
+    .abt-section h1 {
         font-size: 23px;
+    }
+
+    .contact .pad130 {
+        padding: 50px 20px;
     }
 }
 
