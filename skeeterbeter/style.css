@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -153,9 +156,20 @@ a.nav-link {
     height: 850px;
 }
 
+.automatic-banner {
+
+    background: url("./images/automated-bn.jpg") no-repeat center/cover fixed;
+    position: relative;
+    margin-top: -110px;
+    z-index: -1;
+    position: relative;
+    height: 850px;
+}
+
 .banner-section::after,
 .abt-section::after,
-.barriers::after {
+.barriers::after,
+.automatic-banner::after {
     z-index: 1;
     content: "";
     bottom: 0;
@@ -171,7 +185,8 @@ a.nav-link {
 
 .banner-section::before,
 .abt-section::before,
-.barriers::before {
+.barriers::before,
+.automatic-banner::before {
     background-color: transparent;
     background-image: linear-gradient(180deg, #00000000 0%, #000000 100%);
     opacity: 0.61;
@@ -186,7 +201,8 @@ a.nav-link {
 
 .banner-section h1,
 .abt-section h1,
-.barriers h1 {
+.barriers h1,
+.automatic-banner h1 {
     font-size: 75px;
     text-align: center;
     color: white;
@@ -399,7 +415,11 @@ a.nav-link {
 .skeeter-content,
 .skeeter-img,
 .offer-img,
-.offer-text,.automatic-left-img,.automatic-right,.bottom-content,.bottom-img {
+.offer-text,
+.automatic-left-img,
+.automatic-right,
+.bottom-content,
+.bottom-img {
     width: 50%;
 }
 
@@ -1098,14 +1118,14 @@ h6 {
     max-height: 520px;
 }
 
-.automatic-banner {
+/* .automatic-banner {
     background: url("./images/automated-bn.jpg") no-repeat center/cover fixed;
     position: relative;
     margin-top: -110px;
     z-index: -1;
     position: relative;
     min-height: 300px;
-}
+} */
 
 .bg-yellow {
     background-color: #EFC600;
@@ -1336,8 +1356,7 @@ a.dropdown-item:hover {
         top: 0;
     }
 
-    .about-section,
-    .about {
+    .about-section {
         padding: 0px 20px;
     }
 
@@ -1372,8 +1391,9 @@ a.dropdown-item:hover {
         top: 0;
         left: 0;
     }
-    .pt100{
-        padding:100px 20px 20px 0px;
+
+    .pt100 {
+        padding: 100px 20px 0px 20px;
     }
 }
 
@@ -1422,7 +1442,8 @@ a.dropdown-item:hover {
     .banner-section h1,
     .abt-section h1,
     .barriers h1,
-    .about-barrier {
+    .about-barrier,
+    .automatic-banner h1 {
         max-width: 800px;
         margin: 0 auto;
         font-size: 50px;
@@ -1505,6 +1526,10 @@ a.dropdown-item:hover {
     .offer-img img {
         max-width: 510px;
     }
+
+    .spacing {
+        padding: 150px 20px 80px;
+    }
 }
 
 a.nav-link.dropdown-toggle.show {
@@ -1570,7 +1595,8 @@ a.nav-link.dropdown-toggle.show {
 
     .banner-section h1,
     .abt-section h1,
-    .barriers h1 {
+    .barriers h1,
+    .automatic-banner h1 {
         font-size: 45px;
         max-width: 690px;
 
@@ -1605,7 +1631,8 @@ a.nav-link.dropdown-toggle.show {
     }
 
     .about-text h2,
-    .card-inner-text h2 {
+    .card-inner-text h2,
+    .spray-section h2 {
         font-size: 35px;
     }
 
@@ -1660,6 +1687,7 @@ a.nav-link.dropdown-toggle.show {
     .spray-section::after,
     .spray-section::before {
         height: 80px;
+
     }
 
     .pt150 {
@@ -1680,6 +1708,10 @@ a.nav-link.dropdown-toggle.show {
 
     .skeeter-content::after {
         right: 0;
+    }
+
+    .spacing {
+        padding: 100px 20px 50px;
     }
 }
 
@@ -1947,7 +1979,8 @@ a.nav-link.dropdown-toggle.show {
     }
 
     .skeeter-outer,
-    .skeetr-outer ,.auto-outer{
+    .skeetr-outer,
+    .auto-outer {
         flex-direction: column;
     }
 
@@ -2007,7 +2040,8 @@ a.nav-link.dropdown-toggle.show {
         font-size: 16px;
     }
 
-    .about-outer ,.automatic-bottom-outer{
+    .about-outer,
+    .automatic-bottom-outer {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -2030,7 +2064,10 @@ a.nav-link.dropdown-toggle.show {
     .mosquito-right,
     .skeeter-content,
     .skeeter-left,
-    .skeeter-img,.automatic-left-img,.bottom-img,.bottom-content {
+    .skeeter-img,
+    .automatic-left-img,
+    .bottom-img,
+    .bottom-content {
         width: 100%;
         text-align: center;
     }
@@ -2039,18 +2076,22 @@ a.nav-link.dropdown-toggle.show {
         justify-content: center;
         align-items: center;
     }
-.automatic-left-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+    .automatic-left-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .about-right img,
     .automatic-left img,
     .left-img img,
 
 
     .skeeter-left img,
-    .mosquito-right img,.automatic-left-img img ,.bottom-img img{
+    .mosquito-right img,
+    .automatic-left-img img,
+    .bottom-img img {
         max-height: 400px;
         width: 100%;
         max-width: max-content;
@@ -2067,12 +2108,15 @@ a.nav-link.dropdown-toggle.show {
         padding-left: 45px;
     }
 
-    .about h6 {
+    .about h6,
+    .automatic-right h6,
+    .bottom-content h6 {
         font-size: 20px !important;
     }
 
     .about h3,
-    .automatic-right h3 {
+    .automatic-right h3,
+    .bottom-content h3 {
         font-size: 30px;
 
     }
@@ -2095,8 +2139,26 @@ a.nav-link.dropdown-toggle.show {
     .barrier-spray p,
     .skeeter-right h2,
     .skeeter-right h5,
-    .skeeter-right p {
+    .skeeter-right p,
+    .automatic-right h3,
+    .automatic-right h6,
+    .automatic-right p,
+    .automatic-right ul,
+    .bottom-content h3,
+    .bottom-content h6,
+    .bottom-content p,
+    .spray-section h2,
+    .spray-section p {
         padding-bottom: 20px;
+    }
+
+    .bottom-content h6 br {
+        display: none;
+    }
+
+    .deftbtn {
+        margin: 20px auto;
+        ;
     }
 
     .arrow-list {
@@ -2244,6 +2306,10 @@ a.nav-link.dropdown-toggle.show {
         margin-top: -110px;
         padding: 0px;
     }
+
+    .spray-section p br {
+        display: none;
+    }
 }
 
 
@@ -2355,7 +2421,8 @@ a.nav-link.dropdown-toggle.show {
     }
 
     .about h3,
-    .offer-text h3 {
+    .offer-text h3,
+    .bottom-content h3 {
         font-size: 23px;
     }
 
@@ -2414,6 +2481,11 @@ a.nav-link.dropdown-toggle.show {
     .contact-inner div {
         flex-direction: column;
         width: 100%;
+
+    }
+
+    .contact-inner {
+        border-radius: 20px;
     }
 
     .contact-right h1 {
@@ -2439,6 +2511,19 @@ a.nav-link.dropdown-toggle.show {
     .offer-img img {
         margin-top: -110px;
         max-width: 200px;
+    }
+
+    .lh {
+        line-height: 1.6;
+    }
+
+    .spray-section::before,
+    .spray-section::after {
+        height: 40px;
+    }
+
+    .contact-inner {
+        padding: 30px;
     }
 }
 
@@ -2486,8 +2571,12 @@ a.nav-link.dropdown-toggle.show {
 
     .banner-section,
     .abt-section,
-    .barrier {
+    .automatic-banner {
         height: 600px;
+    }
+
+    .barrier {
+        height: auto;
     }
 
     header {
@@ -2553,7 +2642,10 @@ a.nav-link.dropdown-toggle.show {
     .automatic::after,
     .banner-section::after,
     .abt-section::after,
-    .outer::after {
+    .outer::after,
+    .barrier-spray-inner::after,
+    .automatic-banner::after,
+    .barriers::after {
         display: none;
     }
 
@@ -2564,7 +2656,9 @@ a.nav-link.dropdown-toggle.show {
     }
 
     .banner-section h1,
-    .abt-section h1 {
+    .abt-section h1,
+    .automatic-banner h1,
+    .barriers h1 {
         font-size: 33px;
         max-width: 520px;
     }
@@ -2585,6 +2679,20 @@ a.nav-link.dropdown-toggle.show {
     .barrier-spray h2 {
         font-size: 20px;
     }
+
+    .automatic-right h3 {
+        font-size: 25px;
+    }
+
+    .spray-section h2 {
+        font-size: 25px;
+    }
+
+    .deftbtn {
+        margin: 15px auto;
+    }
+
+
 }
 
 @media (max-width: 450px) {
@@ -2611,7 +2719,7 @@ a.nav-link.dropdown-toggle.show {
     }
 
     .footer-bottom p {
-        font-size: 12px;
+        text-align: center;
     }
 
     .hdactive .number a {
@@ -2626,6 +2734,7 @@ a.nav-link.dropdown-toggle.show {
     .contact .pad130 {
         padding: 50px 20px;
     }
+
 }
 
 body.no-scroll {
@@ -2634,4 +2743,29 @@ body.no-scroll {
 
 .number a:hover {
     color: #fff;
+}
+
+/* animation for fade-left*/
+.scroll-animation.fade-left {
+    opacity: 0.3;
+    transform: translateX(200px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Visible state when the class is added */
+.scroll-animation.fade-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* animation for fade-right */
+.scroll-animation.fade-right {
+    opacity: 0.3;
+    transform: translateX(-200px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.scroll-animation.fade-right.isright-visible {
+    opacity: 1;
+    transform: translateX(0);
 }
